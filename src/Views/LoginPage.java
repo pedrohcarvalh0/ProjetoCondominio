@@ -4,6 +4,8 @@
  */
 package Views;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author tapet
@@ -105,6 +107,11 @@ public class LoginPage extends javax.swing.JFrame {
         jButton_Logar.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
         jButton_Logar.setForeground(new java.awt.Color(255, 255, 255));
         jButton_Logar.setText("Entrar");
+        jButton_Logar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_LogarActionPerformed(evt);
+            }
+        });
         jPanel2.add(jButton_Logar, new org.netbeans.lib.awtextra.AbsoluteConstraints(89, 400, 350, 40));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/painelTransparente.png"))); // NOI18N
@@ -165,6 +172,19 @@ public class LoginPage extends javax.swing.JFrame {
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jButton_LogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LogarActionPerformed
+        // TBotão ao clicar faz a verificação e entra no sistema
+        if(login_User.getText().equals("Pedro") && password_user.getText().equals("123456"))
+        {
+            MainPage tela = new MainPage();
+            //TelaSplash tela = new TelaSplash();
+            tela.setVisible(true);
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(rootPane, "Usuário ou senha Incorreto!!!");
+        }
+    }//GEN-LAST:event_jButton_LogarActionPerformed
 
     /**
      * @param args the command line arguments
