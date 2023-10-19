@@ -6,15 +6,9 @@ package Views;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author tapet
- */
+
 public class LoginPage extends javax.swing.JFrame {
 
-    /**
-     * Creates new form LoginPage
-     */
     public LoginPage() {
         initComponents();
     }
@@ -67,6 +61,7 @@ public class LoginPage extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        login_User.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         login_User.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 login_UserActionPerformed(evt);
@@ -84,6 +79,7 @@ public class LoginPage extends javax.swing.JFrame {
         jLabel4.setText("Senha");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, -1, -1));
 
+        password_user.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         password_user.setToolTipText("");
         jPanel2.add(password_user, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 290, 350, 40));
 
@@ -135,7 +131,7 @@ public class LoginPage extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
@@ -178,8 +174,7 @@ public class LoginPage extends javax.swing.JFrame {
         // TBotão ao clicar faz a verificação e entra no sistema
         if(login_User.getText().equals("1") && password_user.getText().equals("1"))
         {
-            TelaInicio tela = new TelaInicio();
-            //TelaSplash tela = new TelaSplash();
+            TelaLoading tela = new TelaLoading();
             tela.setVisible(true);
             dispose();
         } else {
