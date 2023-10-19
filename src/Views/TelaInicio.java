@@ -238,6 +238,7 @@ public class TelaInicio extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_Taxa_InfosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Taxa_InfosActionPerformed

@@ -158,7 +158,7 @@ public class LoginPage extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        setSize(new java.awt.Dimension(1043, 639));
+        pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
