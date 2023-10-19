@@ -6,14 +6,14 @@ package Views;
 
 /**
  *
- * @author tapet
+ * @author toim6
  */
-public class MainPage extends javax.swing.JFrame {
+public class TelaInicio extends javax.swing.JFrame {
 
     /**
-     * Creates new form MainPage
+     * Creates new form TelaInicio
      */
-    public MainPage() {
+    public TelaInicio() {
         initComponents();
     }
 
@@ -26,11 +26,6 @@ public class MainPage extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
@@ -44,6 +39,12 @@ public class MainPage extends javax.swing.JFrame {
         jButton_Controle_Acesso = new javax.swing.JButton();
         jButton_Cadastro_Veiculo = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -51,59 +52,13 @@ public class MainPage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogosCondomínioMenor.png"))); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/condoInfo.png"))); // NOI18N
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel5.setText("Condomínio Residencial Univasf");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
-
-        jPanel2.setBackground(new java.awt.Color(88, 88, 86));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 19, Short.MAX_VALUE)
-        );
-
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 980, 10));
+        jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 980, 10));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel1.setText("Comunicação: ");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, -1, -1));
+        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
         jButton_Taxa_Infos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nota.png"))); // NOI18N
         jButton_Taxa_Infos.setText("Taxas e Informações");
@@ -112,19 +67,19 @@ public class MainPage extends javax.swing.JFrame {
                 jButton_Taxa_InfosActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton_Taxa_Infos, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 192, -1));
+        jPanel3.add(jButton_Taxa_Infos, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 192, -1));
 
         jButton_Cadastro_Morador.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/userpropietario.png"))); // NOI18N
         jButton_Cadastro_Morador.setText("Cadastro Morador");
-        jPanel3.add(jButton_Cadastro_Morador, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 192, -1));
+        jPanel3.add(jButton_Cadastro_Morador, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 192, -1));
 
         jButton_Cadastro_Residencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/casa.png"))); // NOI18N
         jButton_Cadastro_Residencia.setText("Cadastro Residências");
-        jPanel3.add(jButton_Cadastro_Residencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 192, -1));
+        jPanel3.add(jButton_Cadastro_Residencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 192, -1));
 
         jButton_Relatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/relatorio-de-lucro.png"))); // NOI18N
         jButton_Relatorio.setText("Relatório Mensal");
-        jPanel3.add(jButton_Relatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 192, -1));
+        jPanel3.add(jButton_Relatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 192, -1));
 
         jButton_Reservar_Area.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reserva.png"))); // NOI18N
         jButton_Reservar_Area.setText("Reservas de Áreas");
@@ -133,7 +88,7 @@ public class MainPage extends javax.swing.JFrame {
                 jButton_Reservar_AreaActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton_Reservar_Area, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 192, -1));
+        jPanel3.add(jButton_Reservar_Area, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 192, -1));
 
         jButton_Controle_Visitante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/visita-a-casa.png"))); // NOI18N
         jButton_Controle_Visitante.setText("Controle de Visitantes");
@@ -142,11 +97,11 @@ public class MainPage extends javax.swing.JFrame {
                 jButton_Controle_VisitanteActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton_Controle_Visitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 192, -1));
+        jPanel3.add(jButton_Controle_Visitante, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 192, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         jLabel3.setText("Solicitações:");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 104, -1));
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 104, -1));
 
         jButton_Controle_Acesso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cartao-de-visita.png"))); // NOI18N
         jButton_Controle_Acesso.setText("Controles de Acesso");
@@ -155,7 +110,7 @@ public class MainPage extends javax.swing.JFrame {
                 jButton_Controle_AcessoActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton_Controle_Acesso, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 192, -1));
+        jPanel3.add(jButton_Controle_Acesso, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 192, -1));
 
         jButton_Cadastro_Veiculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/carro-compacto.png"))); // NOI18N
         jButton_Cadastro_Veiculo.setText("Cadastro Veículos");
@@ -164,7 +119,7 @@ public class MainPage extends javax.swing.JFrame {
                 jButton_Cadastro_VeiculoActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton_Cadastro_Veiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, 192, -1));
+        jPanel3.add(jButton_Cadastro_Veiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 290, 192, -1));
 
         jPanel4.setBackground(new java.awt.Color(153, 153, 255));
 
@@ -179,7 +134,74 @@ public class MainPage extends javax.swing.JFrame {
             .addGap(0, 260, Short.MAX_VALUE)
         );
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, 390, 260));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 80, 390, 260));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/LogosCondomínioMenor.png"))); // NOI18N
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/condoInfo.png"))); // NOI18N
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setText("Condomínio Residencial Univasf");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 452, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 129, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(11, Short.MAX_VALUE)))
+        );
+
+        jPanel5.setBackground(new java.awt.Color(88, 88, 86));
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1032, Short.MAX_VALUE)
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 19, Short.MAX_VALUE)
+        );
 
         jMenu1.setText("Opções");
         jMenuBar1.add(jMenu1);
@@ -187,7 +209,6 @@ public class MainPage extends javax.swing.JFrame {
         jMenu2.setText("Ferramentas");
         jMenuBar1.add(jMenu2);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/saida_1.png"))); // NOI18N
         jMenu3.setText("Ajuda");
         jMenuBar1.add(jMenu3);
 
@@ -197,8 +218,8 @@ public class MainPage extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -206,37 +227,38 @@ public class MainPage extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 31, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton_Cadastro_VeiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_VeiculoActionPerformed
+    private void jButton_Taxa_InfosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Taxa_InfosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Cadastro_VeiculoActionPerformed
-
-    private void jButton_Controle_AcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Controle_AcessoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Controle_AcessoActionPerformed
-
-    private void jButton_Controle_VisitanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Controle_VisitanteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Controle_VisitanteActionPerformed
+    }//GEN-LAST:event_jButton_Taxa_InfosActionPerformed
 
     private void jButton_Reservar_AreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Reservar_AreaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_Reservar_AreaActionPerformed
 
-    private void jButton_Taxa_InfosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Taxa_InfosActionPerformed
+    private void jButton_Controle_VisitanteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Controle_VisitanteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_Taxa_InfosActionPerformed
+    }//GEN-LAST:event_jButton_Controle_VisitanteActionPerformed
+
+    private void jButton_Controle_AcessoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Controle_AcessoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_Controle_AcessoActionPerformed
+
+    private void jButton_Cadastro_VeiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_Cadastro_VeiculoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_Cadastro_VeiculoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,20 +277,20 @@ public class MainPage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaInicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainPage().setVisible(true);
+                new TelaInicio().setVisible(true);
             }
         });
     }
@@ -295,6 +317,7 @@ public class MainPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JSeparator jSeparator2;
     // End of variables declaration//GEN-END:variables
 }

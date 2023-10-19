@@ -175,9 +175,9 @@ public class LoginPage extends javax.swing.JFrame {
 
     private void jButton_LogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LogarActionPerformed
         // TBotão ao clicar faz a verificação e entra no sistema
-        if(login_User.getText().equals("Pedro") && password_user.getText().equals("123456"))
+        if(login_User.getText().equals("1") && password_user.getText().equals("1"))
         {
-            MainPage tela = new MainPage();
+            TelaInicio tela = new TelaInicio();
             //TelaSplash tela = new TelaSplash();
             tela.setVisible(true);
             dispose();
