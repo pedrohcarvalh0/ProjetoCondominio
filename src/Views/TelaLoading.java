@@ -22,7 +22,7 @@ public class TelaLoading extends javax.swing.JFrame {
             public void run () {
                 for (int i = 0; i < 101; i++) {
                     try {
-                        sleep(50);
+                        sleep(10);
                         jProgressBar.setValue(i);
                         
                         if (jProgressBar.getValue() <= 40) {
@@ -30,8 +30,8 @@ public class TelaLoading extends javax.swing.JFrame {
                         } else if (jProgressBar.getValue() <= 70) {
                             jLabelShowProgress.setText("Carregando Tabelas...");
                         } else if (jProgressBar.getValue() == 100) {
-                            jLabelShowProgress.setText("CConectado ao Sistema");
-                            TelaPrincipal tela = new TelaPrincipal();
+                            jLabelShowProgress.setText("Conectado ao Sistema");
+                            TelaRoot tela = new TelaRoot();
                             tela.setVisible(true);
                             dispose();
                         }

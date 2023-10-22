@@ -74,10 +74,10 @@ public class LoginPage extends javax.swing.JFrame {
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 70, 30));
 
         jLabel2.setText("Usuário");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, -1, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 70, -1));
 
         jLabel4.setText("Senha");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, -1, -1));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 270, 70, -1));
 
         password_user.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         password_user.setToolTipText("");
@@ -89,7 +89,7 @@ public class LoginPage extends javax.swing.JFrame {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, -1, -1));
+        jPanel2.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 170, -1));
 
         jLabel5.setForeground(new java.awt.Color(51, 0, 255));
         jLabel5.setText("Esqueceu a senha?");
@@ -172,12 +172,25 @@ public class LoginPage extends javax.swing.JFrame {
 
     private void jButton_LogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LogarActionPerformed
         // TBotão ao clicar faz a verificação e entra no sistema
-        if(login_User.getText().equals("1") && password_user.getText().equals("1"))
+        if(login_User.getText().equals("dono") && password_user.getText().equals("1"))
         {
             TelaLoading tela = new TelaLoading();
             tela.setVisible(true);
             dispose();
-        } else {
+        } else if(login_User.getText().equals("admin") && password_user.getText().equals("1")){
+        
+            TelaAdmin tela = new TelaAdmin();
+            tela.setVisible(true);
+            dispose();
+        }
+            else if(login_User.getText().equals("morador") && password_user.getText().equals("1")){
+            TelaAdmin tela = new TelaAdmin();
+            tela.setVisible(true);
+            dispose();    
+        
+        }else{
+     
+            
             JOptionPane.showMessageDialog(rootPane, "Usuário ou senha Incorreto!!!");
         }
     }//GEN-LAST:event_jButton_LogarActionPerformed
